@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 25-Jul-2020 às 21:43
+-- Tempo de geração: 26-Jul-2020 às 19:07
 -- Versão do servidor: 8.0.18
 -- versão do PHP: 7.3.12
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `cadabast` (
   `data_abast` date NOT NULL,
   `abastecido` varchar(300) NOT NULL,
   PRIMARY KEY (`id_abast`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `cadabast`
@@ -46,7 +46,9 @@ INSERT INTO `cadabast` (`id_abast`, `placa`, `prefixo`, `data_abast`, `abastecid
 (1, 'TRY78954', 'TRE899R', '2020-07-24', '150'),
 (2, 'PMJ45697', 'RFD589', '2020-07-23', '100'),
 (5, 'KIY8965', 'TYU569', '2020-07-25', '50'),
-(7, 'WSD4520', 'GF567F', '2020-07-15', '150.5');
+(7, 'WSD4520', 'GF567F', '2020-07-15', '150.5'),
+(20, 'OPL6985', 'QAX785', '2020-07-13', '50'),
+(19, 'ERD789', 'ER67R', '2020-07-26', '150');
 
 -- --------------------------------------------------------
 
@@ -72,7 +74,8 @@ INSERT INTO `cadastro` (`placa`, `marca`, `modelo`, `localizacao`, `capacidade`)
 ('PMJ45697', 'CASE', 'CARRETA HIDRÁULICA ROC D7, D9 E D7LF', 'Fortaleza', 300),
 ('TRY78954', 'DAF', 'DAF XF105\r\n\r\n', 'Fortaleza', 500),
 ('KIY8965', 'DAF', 'DAF CF85', 'Tianguá', 500),
-('WSD4520', 'DAF', 'CF85 OFF-ROAD', 'Viçosa do Ceará', 1000);
+('WSD4520', 'DAF', 'CF85 OFF-ROAD', 'Viçosa do Ceará', 1000),
+('OPL6985', 'DAF', 'CF-894', 'Barbalha', 1500);
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,10 @@ INSERT INTO `cadmaq` (`prefixo`, `tipoeq`, `localizacao`) VALUES
 ('RFD589', 'Trator', 'Russas'),
 ('TRE899R', 'Rompedor', 'Fortaleza'),
 ('TYU569', 'Compactador HC', 'Tianguá'),
-('GF567F', 'DIAMEC 232', 'Viçosa do Ceará');
+('GF567F', 'DIAMEC 232', 'Viçosa do Ceará'),
+('QAX785', 'Furadeira', 'Barbalha'),
+('NM012M', 'AUTOBETONEIRA R40 R-EVOLUTION', 'Sobral'),
+('FRG896Q', 'Compactador HC', 'Sobral');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
